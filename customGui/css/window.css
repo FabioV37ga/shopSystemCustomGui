@@ -72,6 +72,8 @@
 }
 
 .customize-overlay--nav {
+    position: relative;
+    z-index: 4;
     height: 30px;
     width: 100%;
     /* background: rgb(11, 145, 100) */
