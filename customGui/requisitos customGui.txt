@@ -1,0 +1,40 @@
+Conteúdo editável:
+header:
+	Título da página;
+	Logo;
+	Link do Discord;
+	Cor do background;
+	Transparencia do background;
+	Cor da fonte;
+	Cor da fonte Discord;
+	Cor dos detalhes;
+Footer:
+	Texto do rodapé;
+	Cor do background;
+	transparencia do background;
+	Cor da fonte;
+Home:
+	Cor do background;
+	Transparencia do background;
+	Background image; +checkbox
+	Título;
+	Cor do título;
+	Texto;
+	Cor do texto;
+Shop:
+	Cor do background;
+	Cor dos detalhes;
+	Cor do cartão;
+	Cor do texto do Cartão;
+	Cor do rótulo;
+	Cor da fonte dos itens;
+
+	Item (instância)
+		- Foto
+		- Título
+		- Descrição
+		- Descrição detalhada
+		- Preço
+Suporte:
+	?
+	

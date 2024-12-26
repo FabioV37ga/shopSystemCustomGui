@@ -1,0 +1,79 @@
+:root {
+    --detail-background: 255, 0, 0;
+    --secondary-background: 117, 0, 0;
+    --header-background: 0, 0, 0;
+    --header-background-opacity: 0.8;
+    --header-nav-color: 255, 255, 255;
+    --body-background: 10, 10, 10;
+    --body-background-opacity: .5;
+    --footer-background: 0, 0, 0;
+    --footer-background-opacity: 0.8;
+    --main-font: "Lexend";
+}
+
+ :root {
+    --header-corFundo: '';
+    --header-opacidadeFundo: '';
+    --header-corFonte: '';
+    --header-corFonteDiscord: '';
+    --header-corDetalhes: '';
+    --header-corBotao: '';
+    --header-corSecundariaBotao: '';
+
+    --footer-corFonte: '';
+    --footer-corFundo: '';
+    --footer-opacidadeFundo: '';
+
+    --home-corFundo: '';
+    --home-opacidadeFundo: '';
+    --home-corFonteTitulo: '';
+    --home-corFonteSubtitulo: '';
+    --home-corFonteBotao: '';
+    --home-corBotao: '';
+    --home-corSecundariaBotao: '';
+
+    --shop-corFundo: '';
+    --shop-corRotulo: '';
+    --shop-opacidadeRotulo: '';
+    --shop-corFonteRotulo: '';
+    --shop-corDetalhesRotulo: '';
+    --shop-corFundoCartao: '';
+    --shop-corFonteCartao: '';
+    --shop-corDetalhesCartao: '';
+    --shop-corFonteBotao: '';
+    --shop-corBotaoCartao: '';
+    --shop-corSecundariaBotaoCartao: '';
+} 
+/* :root {
+    --header-corFundo: 0, 0, 0;
+    --header-opacidadeFundo: 0.8;
+    --header-corFonte: 255, 255, 255;
+    --header-corFonteDiscord: 0, 0, 0;
+    --header-corDetalhes: 255, 0, 0;
+    --header-corBotao: 255, 0, 0;
+    --header-corSecundariaBotao: 0, 0, 0;
+
+    --footer-corFonte: 255, 255, 255;
+    --footer-corFundo: 0, 0, 0;
+    --footer-opacidadeFundo: 0.8;
+
+    --home-corFundo: 10, 10, 10;
+    --home-opacidadeFundo: 0.5;
+    --home-corFonteTitulo: 255, 255, 255;
+    --home-corFonteSubTitulo: 172, 172, 172;
+    --home-corFonteBotao: 255, 255, 255;
+    --home-corBotao: 255, 0, 0;
+    --home-corSecundariaBotao: 0, 0, 0;
+
+    --shop-corFundo: 10, 10, 10;
+    --shop-corRotulo: 0, 0, 0;
+    --shop-opacidadeRotulo: 0.6;
+    --shop-corFonteRotulo: 255, 255, 255;
+    --shop-corDetalhesRotulo: 255, 0, 0;
+    --shop-corFundoCartao: 0, 0, 0;
+    --shop-corFonteCartao: 255, 255, 255;
+    --shop-corDetalhesCartao: 255, 255, 255;
+    --shop-corFonteBotao: 255, 255, 255;
+    --shop-corBotaoCartao: 255, 0, 0;
+    --shop-corSecundariaBotaoCartao: 0, 0, 0;
+} */

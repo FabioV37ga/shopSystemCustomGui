@@ -1,0 +1,56 @@
+---------------------
+
+Versão desktop - $130
+Versão mobile - $130
+Versão responsiva (mobile + desktop)- $200
+(Adicional) Software para personalização com salvamento da nuvem + Licença - $100
+
+-----------------------
+
+Pacote completo + Suporte 30 dias - $350
+* O Suporte inclui assitência para implementação de funções no sistema
+
+-----------------------
+
+FAQ
+1. Qual é a diferença entre a versão responsiva para a versão desktop/mobile?
+R: A versão responsiva é um pacote 2 em 1. Suporta, no mesmo sistema, dispositivos desktop e mobile.
+
+2. Quais são os benefícios ao comprar o software de personalização?
+R: O software de personalização é uma interface que facilita a edição e estilização do site para clientes
+   que não tem conhecimento em HTML e CSS.
+   Além disso, permite o salvamento da estilização do site na nuvem, em nosso servidor, o que garante que
+   as edições nunca serão perdidas.
+
+3. Quais são os benefícios ao comprar o Pacote completo + Suporte de 30 dias?
+R: A compra do Pacote completo + Suporte de 30 dias garante os seguintes itens:
+   1. Versão responsiva (mobile + desktop)
+   2. Software para personalização com salvamento na nuvem
+   3. 30 dias de suporte personalizado da nossa equipe
+   Além de economizar garantindo que você não precise contratar o suporte se quiser adicionar funcionalidades,
+   você leva o pacote completo que atenderá todos os dispositivos imagináveis, aumentando seu alcance de compra
+   e garantindo que suas informações não se percam localmente.
+
+------------------------
+
+Termos de Uso
+1. A aplicação é única por cliente, não podendo ser enviada e/ou revendida para outros.
+
+2. Uma vez que a licença for ativada em uma máquina, ocorrerá o salvamento das informações do cliente em nosso servidor.
+2.1 Caso seja identificado ativação em outra máquina sem aviso prévio, a licença será cancelada.
+2.2 Será cobrado uma taxa de R$50.00 (Cinquenta reais) para a reativação da mesma.
+
+3. O cliente pode adicionar novas funções ao sistema, desde que não alterem o funcionamento da licença.
+3.1 Quaisquer alterações que quebrem o funcionamento da licença serão passíveis de cancelamento da mesma, vide Art. 2.2.
+3.2 Só haverá suporte para manutenção e assistência de novas funcionalidades se o cliente comprar o Pacote completo + Suporte 30 Dias.
+3.2.1 Não nos responsabilizamos, do contrário, por funções que quebrem o sistema.
+
+4. Não nos responsabilizamos por mal uso do sistema, apenas disponibilizamos um ambiente seguro para venda de itens.
+4.1 Quaisquer problemas legais relacionados ao uso do sistema são de única responsabilidade do cliente.
+
+5. Ao aceitar os termos de uso, você concorda em compartilhar seus dados com o desenvolvedor dessa aplicação, como meio de identificação
+   e garantia que o sistema não está sendo utilizado por outros.
+5.1 Nenhum dado adquirido por meio deste será divulgado por qualquer meio, estes são privados e servem somente para fins de licenciamento.
+
+
+--------------------------

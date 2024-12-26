@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "titulo": "Item A",
+    "descricao": "Descricao breve do item A, O item A está na loja.",
+    "descricaoDetalhada": "Descrição detalhada do item A, esta descrição permite um aprofundamento maior de detalhes sobre o item",
+    "preco": "01.00"
+  },
+  {
+    "id": 1,
+    "titulo": "Item B",
+    "descricao": "Descricao breve do item B, O item A está na loja.",
+    "descricaoDetalhada": "Descrição detalhada do item B, esta descrição permite um aprofundamento maior de detalhes sobre o item",
+    "preco": "01.00"
+  },
+  {
+    "id": 2,
+    "titulo": "Item C",
+    "descricao": "Descricao breve do item C, O item C está na loja.",
+    "descricaoDetalhada": "Descrição detalhada do item C, esta descrição permite um aprofundamento maior de detalhes sobre o item",
+    "preco": "01.00"
+  }
+]
