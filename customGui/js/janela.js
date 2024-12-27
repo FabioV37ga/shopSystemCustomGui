@@ -632,9 +632,9 @@ class Janela {
 
             // Janela.estilosEditadosSessao = JSON.stringify(Janela.estilosEditadosSessao
             //     .replaceAll(",},", "},").replaceAll(",}", "}").replaceAll(" ", "").replaceAll("\n", "").replace(/\\/g, ""))
-                
+
             // Janela.estilosEditadosSessao = Janela.estilosEditadosSessao.replaceAll("\\","")
-            Janela.estilosEditadosSessao = Janela.estilosEditadosSessao.replaceAll(",}","}")
+            Janela.estilosEditadosSessao = Janela.estilosEditadosSessao.replaceAll(",}", "}")
             // console.log(JSON.parse(father.replaceAll(",},", "},")))
             // console.log(key + " , " + keyChild + " === " + root.style.getPropertyValue(Style.propriedades[i]))
 
@@ -954,18 +954,18 @@ class Janela {
 
     // Método responsável por indentificar as alteração e redirecionar ao salvamento correto no banco de dados
     static salvarEdicoes() {
-        var styles = Janela.estilosEditadosSessao.replaceAll(" ", "")
-        console.log(styles)
-        var tipo = 0;
-
-
         if (JSON.stringify(Janela.itensCriadosSessao) != JSON.stringify(Shop.items)) {
             Janela.armazenar(JSON.stringify(Janela.itensCriadosSessao), 'B2')
         }
-        if (styles != JSON.stringify(Style.items)) {
-            Janela.armazenar(styles, 'B3')
-        } else if (styles == JSON.stringify(Style.items)) {
-            console.log("Ta igual")
+
+        var styles = Janela.estilosEditadosSessao
+        if (typeof styles === 'string'){
+            styles = styles.replaceAll(" ", "")
+            if (styles != JSON.stringify(Style.items)) {
+                Janela.armazenar(styles, 'B3')
+            } else if (styles == JSON.stringify(Style.items)) {
+                console.log("Ta igual")
+            }
         }
 
     }
