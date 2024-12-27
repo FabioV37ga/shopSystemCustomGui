@@ -24,10 +24,6 @@ class Style {
         }
     }
 
-    static defineElementValues() {
-
-    }
-
     static defineStylesheet() {
         const root = document.documentElement
 

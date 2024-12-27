@@ -15,6 +15,15 @@ var intervaloItemsStyle = setInterval(() => {
 }, 15);
 
 
+Fields.inicializar()
+
+var intervaloItemsFields = setInterval(() => {
+    if (Fields.items){
+        Fields.defineFieldValues(Fields.items)
+        clearInterval(intervaloItemsFields)
+    }
+}, 15);
+
 
 Shop.inicializar()
 

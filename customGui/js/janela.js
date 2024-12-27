@@ -7,7 +7,7 @@ class Janela {
         <div class="customize-overlay--header">
             <h1 class="customize-overlay--title">
                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                customGui v0.3.3
+                customGui v1.0.0
             </h1>
             <a class="customize-overlay--save" style="display: none">salvar</a>
             <a class="customize-overlay--vision">
@@ -410,6 +410,7 @@ class Janela {
     static selectedTab = 0;
     static itensCriadosSessao = [];
     static estilosEditadosSessao;
+    static fieldsEditadosSessao = [];
 
 
     // Método responsável por inicializar a janela customGui.
@@ -439,8 +440,11 @@ class Janela {
 
             // Adiciona itens existêntes do banco de dados à lista de itens editáveis
             Janela.setShopTab(Shop.items)
+
             Janela.estilosEditadosSessao = Style.items
             Janela.setTabStyleValues()
+
+            Janela.setTabFieldValues()
 
             var botaoSalvar = document.querySelector(".customize-overlay--save")
             botaoSalvar.addEventListener("click", () => {
@@ -547,6 +551,24 @@ class Janela {
             expandElements[i].parentElement.children[4].classList.remove("opened")
             expandElements[i].parentElement.children[4].classList.remove("closing")
         }
+    }
+
+    static setTabFieldValues() {
+        var timeout = setTimeout(() => {
+            var inputsTexto = document.querySelectorAll('.customize--item-value input[type="text"], .customize--item-value textarea')
+            for (let i = 0; i <= inputsTexto.length - 1; i++) {
+                inputsTexto[i].value = Fields.items[i];
+                var novoItem = new field(inputsTexto[i].value);
+                Janela.fieldsEditadosSessao.push(novoItem);
+
+                inputsTexto[i].addEventListener("input", function (e) {
+                    // Janela.fieldsEditadosSessao = JSON.parse(Janela.fieldsEditadosSessao)
+                    Janela.fieldsEditadosSessao[i].value = inputsTexto[i].value
+                    // console.log(Janela.fieldsEditadosSessao[i].value)
+                    Janela.verifyChanges("fields")
+                })
+            }
+        }, 200);
     }
 
     static setTabStyleValues() {
@@ -959,14 +981,21 @@ class Janela {
         }
 
         var styles = Janela.estilosEditadosSessao
-        if (typeof styles === 'string'){
+        if (typeof styles === 'string') {
             styles = styles.replaceAll(" ", "")
             if (styles != JSON.stringify(Style.items)) {
                 Janela.armazenar(styles, 'B3')
-            } else if (styles == JSON.stringify(Style.items)) {
-                console.log("Ta igual")
             }
         }
+
+        var campos = JSON.stringify(Janela.fieldsEditadosSessao)
+            .replaceAll('}', "")
+            .replaceAll('{', "")
+            .replaceAll('"value":', "")
+
+        if (JSON.stringify(Fields.items) != campos) {
+            Janela.armazenar(campos, 'B4')
+        } 
 
     }
 
@@ -987,11 +1016,26 @@ class Janela {
                 if (Style.valores[item].toString() != `${value}`) {
                     document.querySelector(".customize-overlay--save").style.display = 'initial'
                     // console.log("dif")
-                    return false
+                    return true
                 } else {
                     document.querySelector(".customize-overlay--save").style.display = 'none'
                     // console.log("igualigual")
+                    return false
+                }
+            case "fields":
+                var campos = JSON.stringify(Janela.fieldsEditadosSessao)
+                    .replaceAll('}', "")
+                    .replaceAll('{', "")
+                    .replaceAll('"value":', "")
+
+                console.log(Janela.fieldsEditadosSessao)
+                console.log(JSON.stringify(Fields.items))
+                if (JSON.stringify(Fields.items) != campos) {
+                    document.querySelector(".customize-overlay--save").style.display = 'initial'
                     return true
+                } else {
+                    document.querySelector(".customize-overlay--save").style.display = 'none'
+                    return false
                 }
         }
     }
@@ -1033,13 +1077,25 @@ class Janela {
             .then(result => {
                 // SUCESSO
                 console.log('Sucesso:', result);
-                Janela.updateShopElements()
+
+                var page = window.location.toString()
+                if (page.includes("shop.html")) {
+                    Janela.updateShopElements()
+                }
+
                 document.querySelector(".customize--warning").style.display = 'none'
             })
             .catch(error => {
                 // ERRO
                 console.log('Erro', result);
             });
+    }
+}
+
+class field {
+    value;
+    constructor(e) {
+        this.value = e
     }
 }
 
