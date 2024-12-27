@@ -29,8 +29,9 @@ class Fields {
         document.querySelector('footer span').textContent = valores[3]
         document.querySelector('body').style.backgroundImage = valores[4]
         document.querySelector('.main-content--container h1').textContent = valores[5]
-        var windowLoc = window.location.href.split('/');
-        if (windowLoc[windowLoc.length - 1].includes("index.html")) {
+        var windowLoc = window.location.href;
+        if (windowLoc.split('/')[windowLoc.split('/').length - 1].includes("index.html") ||
+            windowLoc == 'https://fabiov37ga.github.io/shopSystemCustomGui/') {
             document.querySelector('.main-content--container span').textContent = valores[6]
         }
     }
