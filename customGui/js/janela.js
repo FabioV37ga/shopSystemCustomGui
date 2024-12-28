@@ -994,6 +994,7 @@ class Janela {
             .replaceAll('"value":', "")
 
         if (JSON.stringify(Fields.items) != campos) {
+            Fields.defineFieldValues(JSON.parse(campos))
             Janela.armazenar(campos, 'B4')
         } 
 
